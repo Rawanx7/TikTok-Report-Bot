@@ -9,9 +9,9 @@ report_video = 0
 report_user = 0
 
 
-def user_info(username: str) -> dict:
+def user_info(3i77l: str) -> dict:
     html_data = request(
-        "GET", f"https://livecounts.io/tiktok-live-follower-counter/{username}"
+        "GET", f"https://livecounts.io/tiktok-live-follower-counter/{3i77l}"
     ).text
     parsed_info = loads(findall(r'n">(.*)<\/s', html_data)[0])
 
